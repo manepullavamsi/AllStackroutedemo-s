@@ -1,0 +1,4 @@
+<p>component1 works!</p>
+<input type="text" #name>
+<button (click)="send(name.value)">send to Component2</button>
+<app-component2 [text]="data"></app-component2>
