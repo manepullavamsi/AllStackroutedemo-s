@@ -1,0 +1,23 @@
+package spring.annotations.java.JavaAnnotations;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import spring.annotations.java.model.Speaker;
+import spring.annotations.java.repository.SpeakerRepoIml;
+import spring.annotations.java.service.ServiceImpl;
+
+@Configuration
+public class AppConfig {
+	
+	@Bean
+	public ServiceImpl getSpeakerservice()
+	{
+		return new ServiceImpl();
+	}
+	@Bean
+	public SpeakerRepoIml getSpeakerRepo()
+	{
+		return new SpeakerRepoIml();
+	}
+}

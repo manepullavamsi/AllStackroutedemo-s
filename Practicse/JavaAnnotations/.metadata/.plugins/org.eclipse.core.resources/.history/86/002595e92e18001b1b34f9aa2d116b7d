@@ -1,0 +1,37 @@
+package com.spring.model;
+
+public class IInsurance {
+	private int iId;
+	private String iTitle;
+	private String iDesc;
+	private int iPremimum;
+	public int getiId() {
+		return iId;
+	}
+	public void setiId(int iId) {
+		this.iId = iId;
+	}
+	public String getiTitle() {
+		return iTitle;
+	}
+	public void setiTitle(String iTitle) {
+		this.iTitle = iTitle;
+	}
+	public String getiDesc() {
+		return iDesc;
+	}
+	@Override
+	public String toString() {
+		return "IInsurance [iId=" + iId + ", iTitle=" + iTitle + ", iDesc=" + iDesc + ", iPremimum=" + iPremimum + "]";
+	}
+	public void setiDesc(String iDesc) {
+		this.iDesc = iDesc;
+	}
+	public int getiPremimum() {
+		return iPremimum;
+	}
+	public void setiPremimum(int iPremimum) {
+		this.iPremimum = iPremimum;
+	}
+
+}

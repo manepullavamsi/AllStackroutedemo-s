@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+/home/ubuntu/Desktop/Practicse/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4239729623.index
+/demosai/src/main/resources
+/home/ubuntu/Desktop/Practicse/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3460847099.index
+/krishna/src/main/resources

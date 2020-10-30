@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;KeepNote-Step1-Boilerplate/src/main/webapp/WEB-INF/dispatcher-servlet.xml&apos; to &apos;dispatcher1-servlet.xml&apos;" description="Rename resource &apos;dispatcher-servlet.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/WEB-INF/dispatcher-servlet.xml" name="dispatcher1-servlet.xml" stamp="1603723508210" updateReferences="true"/>
+</session>

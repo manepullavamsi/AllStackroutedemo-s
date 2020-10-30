@@ -1,0 +1,25 @@
+package spring.annotations.java.JavaAnnotations;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import spring.annotations.java.service.ServiceImpl;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	ApplicationContext ctx=new AnnotationConfigApplicationContext(AppConfig.class);
+        System.out.println( "Hello World!" );
+        //ServiceImpl ser=ctx.getBean(ServiceImpl.class);
+        ServiceImpl ser=ctx.getBean(ServiceImpl.class);
+        System.out.println(ser);
+        System.out.println(ser.findAll().get(0).getFirstName());
+        ServiceImpl ser1=ctx.getBean(ServiceImpl.class);
+        System.out.println(ser1);
+    }
+}

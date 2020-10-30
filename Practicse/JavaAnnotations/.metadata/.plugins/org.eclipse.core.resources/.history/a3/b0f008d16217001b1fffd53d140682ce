@@ -1,0 +1,28 @@
+package spring.annotations.java.JavaAnnotations;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+
+import spring.annotations.java.model.Speaker;
+import spring.annotations.java.repository.SpeakerRepoIml;
+import spring.annotations.java.service.IServices;
+import spring.annotations.java.service.ServiceImpl;
+
+@Configuration
+public class AppConfig {
+	
+	@Bean
+	@Scope(value="Sin")
+	public IServices getSpeakerservice()
+	{
+		ServiceImpl service= new ServiceImpl(getSpeakerRepo());
+		//service.setSpeaker(getSpeakerRepo());
+		return service;
+	}
+	@Bean
+	public SpeakerRepoIml getSpeakerRepo()
+	{
+		return new SpeakerRepoIml();
+	}
+}

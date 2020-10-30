@@ -1,0 +1,11 @@
+use NIIT;
+desc BatchDetails;
+insert into BatchDetails values("B001","MRS.SWATI ROY","MSP","1957-03-12");
+insert into BatchDetails values("B002","MRS.ARURNA K","HEALTHCARE","2011-04-12");
+insert into BatchDetails values("B003","MR.RAJESH KRISHNAN","LIFE SCIENCES","2013-05-11");
+insert into BatchDetails values("B004","MR.SACHIN SHETTY","BFS","2007-01-9");
+insert into BatchDetails values("B005","MR.RAMESH PATEL","COMMUNICATIONS","2000-10-09");
+insert into BatchDetails values("B006","MRS.SUSAN CHERIAN","RETAIL & HOSPITALITY","2001-02-05");
+insert into BatchDetails values("B007","MRS.SAMPADA JAIN","MSP","2007-07-07");
+insert into BatchDetails values("B008","MRS.KAVITA REGE","BPO","2009-09-09");
+insert into BatchDetails values("B009","MR.RAVI SEJPAL","MSP","1957-03-12");

@@ -1,0 +1,10 @@
+package com.spring.dao;
+
+import com.spring.model.IInsurance;
+
+public interface IInsuranceDao {
+	
+	public boolean saveInsuarnce(IInsurance Data);
+	public boolean U
+
+}

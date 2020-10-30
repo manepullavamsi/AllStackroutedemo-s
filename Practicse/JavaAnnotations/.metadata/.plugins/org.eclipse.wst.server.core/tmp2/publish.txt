@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Tue Oct 27 18:11:49 UTC 2020
+org.eclipse.jst.j2ee.server\:/binary\:/home/ubuntu/.m2/repository/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.jar=WEB-INF/lib/spring-web-5.2.7.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:/home/ubuntu/.m2/repository/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.jar=WEB-INF/lib/spring-web-5.2.7.RELEASE.jar

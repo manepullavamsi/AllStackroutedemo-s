@@ -1,0 +1,14 @@
+package spring.annotations.java.repository;
+
+import java.util.List;
+
+import spring.annotations.java.model.Speaker;
+
+public class SpeakerRepoIml implements SpeakerRepository {
+
+	public List<Speaker> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

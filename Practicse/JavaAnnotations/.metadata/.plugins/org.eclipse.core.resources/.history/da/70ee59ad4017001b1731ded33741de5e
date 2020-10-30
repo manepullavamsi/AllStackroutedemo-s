@@ -1,0 +1,5 @@
+package spring.annotations.java.repository;
+
+public class Speaker {
+
+}

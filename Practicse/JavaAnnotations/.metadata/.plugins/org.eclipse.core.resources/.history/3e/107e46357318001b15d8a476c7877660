@@ -1,0 +1,64 @@
+package com.spring.dao;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.spring.model.Course;
+
+@Repository
+@Transactional
+public class ICourseDaoImp implements ICourseDao {
+	
+	@Autowired
+	private SessionFactory sessionfactory;
+	
+	public boolean saveCOurse(Course course) {
+		// TODO Auto-generated method stub
+		try
+		{
+			sessionfactory.getCurrentSession().save(course);
+			return true;
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	public boolean updateCourse(Course course) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean deleteCourse(int courseId) {
+		// TODO Auto-generated method stub
+		
+		try {
+			Course course =this.sessionfactory.getCurrentSession().load(Course.class, courseId);
+		this.sessionfactory.getCurrentSession().delete(course);
+		return true;
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	public List<Course> getCourses() {
+		// TODO Auto-generated method stub
+		return sessionfactory.getCurrentSession().createQuery("from Course").list();
+	}
+
+	public Course getCourseById(int courseId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

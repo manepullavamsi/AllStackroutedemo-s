@@ -1,0 +1,12 @@
+use NIIT;
+desc ModuleDetails;
+insert into ModuleDetails values("O10SQL","Oracle 10g SQL ","16");
+insert into ModuleDetails values("O10PLSQL","Oracle 10g PL/ SQL ","16");
+insert into ModuleDetails values("J2SE","Core Java SE 1.6","288");
+insert into ModuleDetails values("J2EE","Advanced Java EE 1.6","80");
+insert into ModuleDetails values("JAVAFX","JavaFX 2.1","80");
+insert into ModuleDetails values("DOTNT4",".Net Framework 4.0 ","50");
+insert into ModuleDetails values("SQL2008","MS SQl Server 2008","120");
+insert into ModuleDetails values("MSBI08","MS BI Studio 2008","158");
+insert into ModuleDetails values("SHRPNT","MS Share Point ","80");
+insert into ModuleDetails values("ANDRD4","Android 4.0","200");

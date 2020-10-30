@@ -1,0 +1,41 @@
+package com.spring.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.spring.dao.ICourseDao;
+import com.spring.model.Course;
+
+@Controller
+@RequestMapping("/")
+public class CourseController {
+	
+	@Autowired
+	private ICourseDao icDao;
+	
+	@GetMapping("/")
+	public ModelAndView getHomePage()
+	{
+		ModelAndView modelAndView=new ModelAndView("index");
+		modelAndView.addObject("icList",icDao.getCourses() );
+		return modelAndView;
+	}
+	
+	@PostMapping("/savePolicy")
+	public String savePolicyDetails(@ModelAttribute("course") Course course,ModelMap model)
+	{
+		boolean status=icDao.saveCOurse(course);
+		model.addAttribute("icList",this.icDao.getCourses());
+		return "index";
+	}
+	
+	
+	
+
+}

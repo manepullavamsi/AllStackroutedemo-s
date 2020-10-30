@@ -1,0 +1,40 @@
+package com.spring.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.spring.model.Course;
+
+@Repository
+public class ICourseDaoImp implements ICourseDao {
+	
+	@Autowired
+
+	public boolean saveCOurse(Course course) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean updateCourse(Course course) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean deleteCourse(int courseId) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public List<Course> getCourses() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Course getCourseById(int courseId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

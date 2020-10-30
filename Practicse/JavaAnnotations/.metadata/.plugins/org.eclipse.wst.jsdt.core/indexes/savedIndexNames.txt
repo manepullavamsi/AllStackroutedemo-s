@@ -1,0 +1,14 @@
+INDEX VERSION 1.4+/home/ubuntu/Desktop/Practicse/JavaAnnotations/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1602737935.index
+2280146840.index
+2108390731.index
+2378874291.index
+3491446326.index
+3562492460.index
+1847290221.index
+882248813.index
+579816251.index
+2712028756.index
+3335279769.index
+2113835772.index
+1445671150.index

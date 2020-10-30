@@ -1,0 +1,4 @@
+INDEX VERSION 1.4+/home/ubuntu/Desktop/Practicse/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3460847099.index
+3767045239.index
+2121029686.index

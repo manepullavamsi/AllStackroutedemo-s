@@ -1,0 +1,6 @@
+package spring.annotations.java.repository;
+
+public interface SpeakerRepository {
+	 public  String get();
+
+}
