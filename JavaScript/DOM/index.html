@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Dom Example</title>
+  </head>
+  <body>
+      <div class="table-responsive">
+            <div class="card">
+                    <div class="card-header text-center bg-primary">
+                      Mobile Stock Exchange
+                    </div>
+    <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Mobile Name</th>
+            <th scope="col">Model</th>
+            <th scope="col">Price</th>
+            <th scope="col">Sailed</th>
+            <th scope="col">Stock</th>
+          </tr>
+        </thead>
+        <tbody id="tbody1">
+          <tr>
+            <th scope="row">Samsung</th>
+            <td>M30</td>
+            <td>15000</td>
+            <td>100</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <th scope="row">Mi</th>
+            <td>Note-5</td>
+            <td>10000</td>
+            <td>100</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <th scope="row">i-Phone</th>
+            <td>7s</td>
+            <td>30000</td>
+            <td>120</td>
+            <td>10</td>
+          </tr>
+          <tr>
+                <th scope="row">One-Plus</th>
+                <td>7T</td>
+                <td>35000</td>
+                <td>15</td>
+                <td>20</td>
+              </tr>
+        </tbody>
+      </table>
+    </div>
+    <form>
+            <div class="card">
+                    <div class="card-header text-center bg-primary">
+                      Please Enter Mobile Details to add to Database
+                    </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Please Enter Mobile Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter Mobile Name">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Mobile Model:</label>
+              <input type="text" class="form-control" id="model" placeholder="Enter Mobile Model">
+            </div>
+            <div class="form-group">
+                    <label for="formGroupExampleInput2">Cost</label>
+                    <input type="Number" class="form-control" id="cost" placeholder="Enter Cost of Mobile">
+                  </div>
+                  <div class="form-group">
+                        <label for="formGroupExampleInput2">Sailed</label>
+                        <input type="Number" class="form-control" id="sailed" placeholder="Enter Number of Mobiles Sailed">
+                      </div>
+                      <div class="form-group">
+                            <label for="formGroupExampleInput2">Stock</label>
+                            <input type="Number" class="form-control" id="stock" placeholder="Enter Mobiles Count in Stock">
+                          </div>
+                          <input type="button" value="AddData" class="btn btn-warning" onclick="addData(event)">
+                          </div>
+                          
+          </form>
+    <!-- Optional JavaScript -->
+    <script src="index.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
