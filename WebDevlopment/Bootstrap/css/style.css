@@ -1,0 +1,77 @@
+body{
+    padding: 0;
+    margin:0;
+    overflow-x:hidden;
+}
+.navbar
+{
+    background-color: #ffde22 !important; 
+    border-bottom: 2px solid coral !important;
+    color: black !important;
+}
+.row{
+    margin-top: 0%;
+}
+
+.navbar-brand img
+{
+    height: 10vh;
+    width: 10vw;
+}
+.product-desc h3{
+    padding:1em;
+    text-justify: auto;
+    color: white;
+}
+
+.fa{
+    font-size: 2em !important;
+    padding: 0.5em !important;
+    color: #fff;
+}
+.dropdown-item{
+    background-color: orangered !important;
+}
+
+.footer-sec
+{
+    background-color: olivedrab;
+    text-align: center;
+}
+#foot{
+    text-align: center;
+}
+div #c1 p,h5{
+    font-size: 4em;
+    color: rgb(44, 93, 226); 
+}
+.jumbotron{
+    background-color:burlywood !important;
+    text-align: center;
+    font-family: 'Amiri', serif;
+    margin: 0%;
+}
+.product-sec img{
+    width: 300px;
+    height: 300px;
+    border-radius: 17px;
+    margin: 0%;
+    
+
+}
+.product-sec{
+    font-family: 'Trirong', serif;
+    font-size: 3em !important;
+    margin: 0%;
+}
+.row p{
+    text-align: justify !important;
+    font-family: 'Architects Daughter', cursive;
+}
+#connect a{
+height: 2vh;
+width: 2vw;
+}
+.navbar-nav{
+    margin-right: 10vw;
+}
