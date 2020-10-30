@@ -1,0 +1,11 @@
+package com.pratcise.demo.Task1;
+
+public class Movie {
+	Actor actor;
+
+	public void setActor(Actor actor) {
+		this.actor = actor;
+	}
+
+	
+}

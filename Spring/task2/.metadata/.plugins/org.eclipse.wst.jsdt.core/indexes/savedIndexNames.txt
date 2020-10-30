@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+/home/ubuntu/Desktop/Spring/task2/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1590296437.index
+82303710.index
+3670727805.index
+3335279769.index
+909065284.index

@@ -1,0 +1,52 @@
+package com.springboot.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.springboot.exception.CourseAlreadyExists;
+import com.springboot.model.Course;
+import com.springboot.services.ICOurseService;
+
+@Controller
+@RequestMapping("/api/v1")
+public class CourseController {
+	
+	@Autowired
+	private ICOurseService icourseservice;
+	
+	private ResponseEntity<?> response;
+	@PostMapping("/addCourse")
+	public ResponseEntity<?> savePolicy(@RequestBody Course course) throws CourseAlreadyExists
+	{
+		try {
+			Course coursecreated=icourseservice.saveCourse(course);
+			response= new ResponseEntity<>(coursecreated,HttpStatus.CREATED);
+		}
+		catch(CourseAlreadyExists e)
+		{
+			throw new CourseAlreadyExists();
+		}
+		return response;
+	}
+	
+	@GetMapping("/getCourse")
+	public ResponseEntity<?> getPolicy()
+	{
+		try {
+			
+			response= new ResponseEntity<>(this.icourseservice.getAllCourses(),HttpStatus.OK);
+		}
+		catch(Exception e)
+		{
+			response= new ResponseEntity<>("Some internal server error......",HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+		return response;
+	}
+
+}

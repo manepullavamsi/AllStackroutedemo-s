@@ -1,0 +1,16 @@
+package com.Ioc.SpringIoc;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        BeanFactory factory=new xmlBeanFactory(new ClassPathResourse("beans.xml"));
+        Student student=(Student) factory.getBean("Student");
+        System.out.println(student.getStudentName());
+    }
+}

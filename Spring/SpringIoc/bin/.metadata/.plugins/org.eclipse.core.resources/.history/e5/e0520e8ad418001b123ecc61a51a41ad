@@ -1,0 +1,44 @@
+package com.example.demo.Model;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
+public class Course {
+	
+	
+	private int courseId;
+	private String courseName;
+	private String courseDesc;
+	@Override
+	public String toString() {
+		return "Course [courseId=" + courseId + ", courseName=" + courseName + ", courseDesc=" + courseDesc
+				+ ", courseAmt=" + courseAmt + "]";
+	}
+	private int courseAmt;
+	public int getCourseId() {
+		return courseId;
+	}
+	public void setCourseId(int courseId) {
+		this.courseId = courseId;
+	}
+	public String getCourseName() {
+		return courseName;
+	}
+	public void setCourseName(String courseName) {
+		this.courseName = courseName;
+	}
+	public String getCourseDesc() {
+		return courseDesc;
+	}
+	public void setCourseDesc(String courseDesc) {
+		this.courseDesc = courseDesc;
+	}
+	public int getCourseAmt() {
+		return courseAmt;
+	}
+	public void setCourseAmt(int courseAmt) {
+		this.courseAmt = courseAmt;
+	}
+
+}

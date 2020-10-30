@@ -1,0 +1,106 @@
+package com.example.demo.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.demo.Exception.CourseAlreadyExists;
+import com.example.demo.Exception.CourseNotFound;
+import com.example.demo.Model.Course;
+import com.example.demo.Services.ICourseServices;
+
+
+
+@Controller
+@RequestMapping("/api/v1")
+public class CourseController {
+	
+	@Autowired
+	private ICourseServices icourseservice;
+	
+	private ResponseEntity<?> response;
+	
+	@PostMapping("/addCourse")
+	public ResponseEntity<?> saveCourse(@RequestBody Course course) throws CourseAlreadyExists
+	{
+		try {
+			Course coursecreated=icourseservice.saveCourse(course);
+			response= new ResponseEntity<>(coursecreated,HttpStatus.CREATED);
+		}
+		catch(CourseAlreadyExists e)
+		{
+			response= new ResponseEntity<>("Some internal Server Error ...",HttpStatus.INTERNAL_SERVER_ERROR);
+			throw new CourseAlreadyExists();
+		}
+		return response;
+	}
+	
+	@GetMapping("/getCourse")
+	public ResponseEntity<?> getCourse()
+	{
+		try {
+			
+			response= new ResponseEntity<>(this.icourseservice.getAllCourses(),HttpStatus.OK);
+		}
+		catch(Exception e)
+		{
+			response= new ResponseEntity<>("Some internal server error......",HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+		return response;
+	}
+	@PutMapping("/updateCourse")
+	public ResponseEntity<?> updatecourse(@RequestBody Course course) throws CourseAlreadyExists
+	{
+		try {
+			Course courseupdate=icourseservice.updateCourse(course);
+			response= new ResponseEntity<>(courseupdate,HttpStatus.CREATED);
+		}
+		catch(CourseAlreadyExists e)
+		{
+			response= new ResponseEntity<>("Some internal Server Error ...",HttpStatus.INTERNAL_SERVER_ERROR);
+			throw new CourseAlreadyExists();
+		}
+		return response;
+	}
+	
+	@GetMapping("/getCourse/{id}")
+	public ResponseEntity<?> getCourseById(@PathVariable("id") Integer icId) throws CourseNotFound
+	{
+		try {
+			Course course =this.icourseservice.getCourseById(icId);
+			response= new ResponseEntity<>(course,HttpStatus.OK);
+		}
+		catch(CourseNotFound e)
+		{
+			response= new ResponseEntity<>("Some internal server error......",HttpStatus.INTERNAL_SERVER_ERROR);
+			throw new CourseNotFound();
+		}
+		return response;
+	}
+	
+	@DeleteMapping("/deleteCourse/{id}")
+	public ResponseEntity<?> deleteCourseById(@PathVariable("id") Integer icId) throws CourseNotFound
+	{
+		try {
+			boolean deletestatus =this.icourseservice.deleteCourse(icId);
+			response= new ResponseEntity<>("Course Deleted....",HttpStatus.OK);
+		}
+		catch(CourseNotFound e)
+		{
+			response= new ResponseEntity<>("Some internal server error......",HttpStatus.INTERNAL_SERVER_ERROR);
+			throw new CourseNotFound();
+		}
+		return response;
+	}
+
+	
+
+}

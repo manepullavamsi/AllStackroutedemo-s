@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/home/ubuntu/Desktop/Spring/SpringIoc/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1006350157.index
+2750243136.index
+3030827548.index
+2280146840.index
+2820549366.index
+2455642991.index
+1132052690.index

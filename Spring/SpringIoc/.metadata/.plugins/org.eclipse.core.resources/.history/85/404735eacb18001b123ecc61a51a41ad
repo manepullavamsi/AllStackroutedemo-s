@@ -1,0 +1,23 @@
+package com.example.demo.Services;
+
+import java.util.List;
+
+import com.example.demo.Exception.CourseAlreadyExists;
+import com.example.demo.Exception.CourseNotFound;
+import com.example.demo.Model.Course;
+
+
+
+public interface ICourseServices {
+	
+public Course saveCourse(Course course) throws CourseAlreadyExists;
+	
+	public Course updateCourse(Course course)throws CourseAlreadyExists;
+	
+	public boolean deleteCourse(int courseId)throws CourseAlreadyExists;
+	
+	public List<Course> getAllCourses()throws CourseAlreadyExists;
+	
+	public Course getCourseById(int courseId)throws CourseNotFound;
+
+}

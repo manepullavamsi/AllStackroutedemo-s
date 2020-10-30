@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+/home/ubuntu/Desktop/Spring/task2/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3160421870.index
+/KeepNote-Step1-Boilerplate/src/main/java

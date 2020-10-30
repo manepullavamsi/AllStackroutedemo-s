@@ -1,0 +1,6 @@
+127.0.0.1 - - [26/Oct/2020:13:07:39 +0000] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [26/Oct/2020:13:07:43 +0000] "GET /KeepNote-Step1-Boilerplate/ HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [26/Oct/2020:13:09:51 +0000] "GET /favicon.ico HTTP/1.1" 404 1016
+127.0.0.1 - - [26/Oct/2020:13:18:21 +0000] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [26/Oct/2020:13:18:21 +0000] "GET /KeepNote-Step1-Boilerplate/WEB-INF/dispatcher-servlet.xml HTTP/1.1" 404 992
+127.0.0.1 - - [26/Oct/2020:13:18:56 +0000] "GET /KeepNote-Step1-Boilerplate/WEB-INF/dispatcher-servlet.xml HTTP/1.1" 404 992
