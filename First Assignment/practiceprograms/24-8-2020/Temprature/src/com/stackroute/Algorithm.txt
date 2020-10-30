@@ -1,0 +1,4 @@
+In order to convert Temprature in celusis into farenheat
+Take the input temprature from user in celusis.
+Convert temprature from celusis to farenheat by using formula "(9/5*temp)+32".
+Print the farenheat tempratue.

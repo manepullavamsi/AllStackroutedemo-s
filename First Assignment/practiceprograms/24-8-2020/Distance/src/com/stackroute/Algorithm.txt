@@ -1,0 +1,4 @@
+Take kilometers as a input from user storing in float variable kms.
+convert the kilometers into meters by using formula meters=(kms*1000).
+print the meters.
+

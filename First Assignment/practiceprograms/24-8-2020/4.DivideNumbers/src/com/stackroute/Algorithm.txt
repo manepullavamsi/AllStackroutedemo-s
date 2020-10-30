@@ -1,0 +1,3 @@
+1.Take two integers from user.
+2.Divide first number by second number store quotient in one variable
+3.print the quotient.

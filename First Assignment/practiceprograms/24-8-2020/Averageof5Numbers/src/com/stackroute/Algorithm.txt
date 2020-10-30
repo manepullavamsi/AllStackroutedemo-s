@@ -1,0 +1,3 @@
+Take input Five integers from user.
+calculate average by using formula avg=sumofelements/no: of elements.
+print the average avg calculated in previous step 

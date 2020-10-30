@@ -1,0 +1,4 @@
+Time taken to complete a journey is going to calculate by using speed and distance
+Take input from user "speed" and "distance"
+calculate time by using formula time=distance/speed
+Print the time taken to complete journey.

@@ -1,0 +1,9 @@
+To check whether given Number is Pallindrome or not.
+create a method called "input" to take input() from user and validate whether it is an integer or not if it is integer method should return intger if not then ask again user to enter number.
+ create another method "postive(int num)" to check whether num is postive or not if it is -ve then print Soory you enter -ve value then call input() method if num is +ve then return true.
+create a method Pallindrome(int num) to validate whether number is pallindrome or not the method should return true if number is pallindrome else method should return false.
+create a output(boolean isPallin) method which should print whether it is pallindrome 
+From Main method call "input()" method store store return value in "num variable.
+Then call "Postive(int num)" method and store return value in boolean variable "type"
+Then call a "pallindrome(int num)" to check whether it is pallindrome or not it should return either true or false store return value in variable "isPallindrome".
+Then again call a "output(isPallindrome)" method it should print either Number is a pallindrome or Number is not a pallindrome. 

@@ -1,0 +1,4 @@
+Take input length and width of an rectangle
+calculate area of rectangle by using formula A=(l*b)
+print the area of rectangle.
+ 

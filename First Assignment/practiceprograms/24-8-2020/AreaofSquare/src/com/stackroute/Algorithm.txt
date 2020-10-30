@@ -1,0 +1,3 @@
+Take input length of side of an square.
+calculate area of square by using formula a=side*side.
+print the area of square.

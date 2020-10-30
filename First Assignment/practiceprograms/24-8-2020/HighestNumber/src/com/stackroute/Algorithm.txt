@@ -1,0 +1,4 @@
+In order to find highest number between two numbers
+Take Two integers from user namely "a" and "b".
+In order to find highest among two numbers use ternary operator by using "high=(a>b)?a:b;"
+print the "high" which is highest number among two variables. 

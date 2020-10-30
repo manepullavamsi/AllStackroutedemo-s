@@ -1,0 +1,4 @@
+Take a integer from user store it in "num" variable.
+check the condition whether "num" is exactly divded by 2 or not using(num%2==0).
+if num exactly divisible by 2 then number is said to be even number.
+if num not exactly divisible by 2 then print a statement that number is odd.

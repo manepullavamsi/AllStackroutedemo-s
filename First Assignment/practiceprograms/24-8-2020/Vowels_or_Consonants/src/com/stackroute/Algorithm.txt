@@ -1,0 +1,6 @@
+To check whether third character of string is vowel or consonant.
+Take input String from user and store it in string variable "s".
+To extract third character of string we are using a inbulit method "string.charAt(index)" which will return character at particular index.
+To work for all cases of character we are converting into lowercase by using "Character.toLowerCase(c)" which will return lower case charcter.
+Then we are using if condition to check whether character is vowel or consonant by using follwing condition (c=='a' || c=='e' || c=='i' || c== 'o' || c=='u') if any one condition is true print Third Character of String is Vowel.
+If if condition fails then in else block print the statement that character is consonant.
